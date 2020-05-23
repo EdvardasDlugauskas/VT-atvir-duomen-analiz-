@@ -27,43 +27,31 @@
 
 \begin{document}
 
-\title{Komandinės užduoties tema}
+\title{vilniustransport atvirų duomenų analizė}
 
-\author{\IEEEauthorblockN{Vardas Pavardė}
+\author{\IEEEauthorblockN{Eligijus Puplinskas}
 \IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
+\textit{Matematikos ir informatikos fakultetas}\\
 Vilnius, Lietuva \\
-epastas@epastas.lt}
+eligijus.puplinskas@mif.stud.vu.lt}
 \and
-\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockN{Edvardas Dlugauskas}
 \IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
+\textit{Matematikos ir informatikos fakultetas}\\
 Vilnius, Lietuva \\
-epastas@epastas.lt}
+edvardas.dlugauskas@mif.stud.vu.lt}
 \and
-\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockN{Dovydas Jaruševičius}
 \IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
+\textit{Matematikos ir informatikos fakultetas}\\
 Vilnius, Lietuva \\
-epastas@epastas.lt}
+dovydas.jarusevicius@mif.stud.vu.lt}
 \and
-\IEEEauthorblockN{Vardas Pavardė}
+\IEEEauthorblockN{Aurintas Bubinas}
 \IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
+\textit{Matematikos ir informatikos fakultetas}\\
 Vilnius, Lietuva \\
-epastas@epastas.lt}
-\and
-\IEEEauthorblockN{Vardas Pavardė}
-\IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
-Vilnius, Lietuva \\
-epastas@epastas.lt}
-\and
-\IEEEauthorblockN{Vardas Pavardė}
-\IEEEauthorblockA{\textit{Informatikos institutas} \\
-\textit{Matematikos if informatikos fakultetas}\\
-Vilnius, Lietuva \\
-epastas@epastas.lt}
+aurintas.bubinas@mif.stud.vu.lt}
 }
 
 \maketitle
@@ -81,9 +69,16 @@ Pristatote problemą
 
 \section{Metodai}
 
-\subsection{Metodas A}
+\subsection{MSE nuostolių funkcija}
 
-Pristatote naudojamus metodus
+Mažiausių kvadratų paklaidos (MSE) funkcija yra viena dažniausiai naudojama nuostolių funkcija. MSE yra atstumų kvadratų suma tarp tikslo ir neuroninio tinklo spėjamos vertės. 
+
+\begin{equation}
+\mathcal{L_{MSE}} = \frac{\sum_{i=1}^n(Y_{i}-Y_{i}^p)^2}{n}
+\label{eq:MSE function}
+\end{equation}
+
+MSE funkcija yra jautri nuokrypiams ir pateikus kelis pavyzdžius iš tam tikros srities, optimalus s[ėjimas būtų jų vidurkinė reikšmė. Todėl ši funkcija labai tinka, kai turime duomenis aplink kažkokią 
 
 \begin{equation}
 \mathcal{L}({\bf X}, {\bf Y}) = \frac{1}{w \cdot h} \sum_{i=1}^h \sum_{j=1}^w (X_{i, j} - Y_{i, j})^2
